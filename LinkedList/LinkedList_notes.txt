@@ -1,0 +1,26 @@
+Linked List is a collection of nodes.
+Each node carries data+ ptr to  next node
+1st node is head. Last node's nxt is NULL.
+
+IMPLEMENTATION - SINGLY:
+1. Generic type:
+public class ListNode <T>{
+    private T data;
+    private ListNode<T> next;
+}
+
+2. Integer type:
+public class ListNode {
+    private int data;
+    private ListNode next;
+}
+
+IMPLEMENTATION - DOUBLY: ( 2 ptr- head, tail)
+public class ListNode {
+    private int data;
+    private ListNode previous;
+    private ListNode next;
+}
+
+UNWORKED PRBMLS:
+1. ADDING LISTNODE ELEMENTS: 947+65= 1012

@@ -1,0 +1,3 @@
+Linear DS- Implement by Array/Linked List
+Access elements by Top pointer
+LIFO fashion

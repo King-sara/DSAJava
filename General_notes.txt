@@ -1,0 +1,91 @@
+8 primitive data types: boolean, byte, short, int, long, float, double, character
+
+String - Not a primitive data type, It is an OBJECT!!
+
+instanceof - Operator that checks whether a variable belongs to a class / Not
+Eg: str= 'Hello World';
+    boolean result= str instanceof String;
+
+Output:
+System.out.println(); System.out.print(); System.out.printf();
+
+Input:
+import java.util.Scanner;
+
+Scanner input= new Scanner(System.in);
+int num= input.nextInt();
+float num= input.nextFloat();
+double num= input.nextDouble();
+String num= input.next(); input.nextLine();
+input.close() --> Closes input. (If needed)
+
+For-Each Syntax:
+for(datatype variable: array/collection)
+    //code
+
+Array Copying Mechanisms:
+1. Shallow copy using Assignment operator: Modifying one => Modifying other
+int ans[]={1,2,3,4,5}
+int new_ans[]=ans;
+
+2. Loop method/ Traversa;"
+int ans[]={1,2,3,4,5};
+int new_ans= new int[ans.length];
+for(int i=0;i<ans.length;i++)
+    new_ans[i]=ans[i];
+
+3. Arraycopy method:
+int ans[]={1,2,3,4,5};
+int new_ans[]= new int[ans.length];
+System.arraycopy(from_array, from_index, into_array, into_index, noOf_Elements)
+
+4. Array copyOfRange method:
+int ans= {1,2,3,4,5};
+int new_ans= Arrays.copyOfRange(source_array, from_index, to_index+1) --> declare during func. call
+
+Print as String using Arrays.toString(ans) or Arrays.deepToString(1stDimension_in_MultiDimensionArray)
+
+Strings:
+Strings are IMMUTABLE... But can CONCAT..
+1. String creation:
+String name="Saravanan";
+String dept= new String("Information Science");
+
+2. String methods:
+2.1: String length:
+int num=name.length();
+2.2: String concat:
+String a= "Hello ";
+String b="world";
+System.out.println(a+b); System.out.println(a.concat(b));
+
+2.3: String equals:
+System.out.println(a.equals(b));
+2.4: String compareTo: --> 0 = equal; -ve = str1<str2; +ve - str1> str2
+System.out.println(a.commpareTo(b));
+2.5: String comapreToIgnoreCase:
+System.out.println(a.comapreToIgnoreCase(b));
+
+2.6: Replace:
+System.out.println(a.replace(old_char, new_char));
+2.7: ReplaceAll:
+System.out.println(a.replaceAll(regex, new_char));
+
+2.8: Split:
+System.out.println(a.split(" "));
+2.9: substring:
+System.out.println(a.substring(0,2)) --> prints 1st 2 char
+
+OTHERS: contains(str), indexOf(str, fromindex), charAt(index), trim(), toLowerCase(), String.valueOf(var with diff datatype), 
+    char array-> String : String.valueOf(); char->String : String.valueOf();
+    match(regex), startsWith(str), endsWith(str), isEmpty(), intern() --> refers sme element
+    getBytes(), contentEquals(), join(delimiter, char seq...), replaceFirst(), subSequence() --> return char seq.,
+    format(), toCharArray(), char Seq-> String : toString()
+
+Priority  Queue are best implemented by Binary Heap. 
+We have 2 heaps method- max heap(root>child), min heap(root<child)
+
+Bottom-Up approach on inserting new node to the heap -> swim
+Top- Down approach on deleting a node from the heap -> sink
+
+Bubble Sort= Sinking sort
